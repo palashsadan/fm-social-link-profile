@@ -1,0 +1,98 @@
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+@font-face{
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-family: myFont;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+}
+
+body{
+    color: var(--White);
+    background-color: var(--OffBlack);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.card{
+    background-color: var(--DarkGrey);
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.avatar{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.avatar img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.avatar h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.location{
+    color: var(--Green);
+    font-weight: bolder;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.card-body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body button{
+    background-color: var(--Grey);
+    color: var(--White);
+    margin: 10px 20px;
+    font: myFont;
+    font-weight: bold;
+    box-shadow: none;
+    padding: 15px 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-body button:hover{
+    background-color: var(--Green);
+    color: black;
+    font-weight: bolder;
+}
+
+.card-body button:active{
+    outline: none;
+}
+
+.card-body p{
+    margin: 20px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    color: var(--White);
+}
+
+.attribution{
+    margin-top: 20px;
+}
